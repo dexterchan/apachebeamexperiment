@@ -1,0 +1,12 @@
+Mar 10, 2019 1:29:57 PM org.apache.beam.examples.subprocess.utils.CallingSubProcessUtils initSemaphore
+INFO: Initialized Semaphore for binary test-Echo6540177477128103716.sh 
+Mar 10, 2019 1:29:57 PM org.apache.beam.examples.subprocess.utils.CallingSubProcessUtils setUp
+INFO: Calling filesetup to move Executables to worker.
+Mar 10, 2019 1:29:57 PM org.apache.beam.examples.subprocess.utils.FileUtils copyFileFromGCSToWorker
+INFO: Moving File /var/folders/3y/gss7w57d4j72h3hnn4jjnpzw0000gn/T/test-Echo6540177477128103716.sh to /var/folders/3y/gss7w57d4j72h3hnn4jjnpzw0000gn/T/test-Echoo6437000441851587200/test-Echo6540177477128103716.sh 
+Mar 10, 2019 1:29:58 PM org.apache.beam.examples.subprocess.utils.CallingSubProcessUtils initSemaphore
+INFO: Initialized Semaphore for binary test-EchoAgain6676160286996425301.sh 
+Mar 10, 2019 1:29:58 PM org.apache.beam.examples.subprocess.utils.CallingSubProcessUtils setUp
+INFO: Calling filesetup to move Executables to worker.
+Mar 10, 2019 1:29:58 PM org.apache.beam.examples.subprocess.utils.FileUtils copyFileFromGCSToWorker
+INFO: Moving File /var/folders/3y/gss7w57d4j72h3hnn4jjnpzw0000gn/T/test-EchoAgain6676160286996425301.sh to /var/folders/3y/gss7w57d4j72h3hnn4jjnpzw0000gn/T/test-Echoo6437000441851587200/test-EchoAgain6676160286996425301.sh 
