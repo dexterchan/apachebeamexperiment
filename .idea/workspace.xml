@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="046722bd-bc0e-4d95-b09f-7f3e18e05c93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/beam/examples/MinimalWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/beam/examples/MinimalWordCount.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,62 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/beam/examples/WordCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
-              <folding>
-                <element signature="n#profile#1;n#profiles#0;n#project#0;n#!!top" />
-                <element signature="n#activation#0;n#profile#1;n#profiles#0;n#project#0;n#!!top" />
-                <element signature="n#profile#4;n#profiles#0;n#project#0;n#!!top" />
-                <element signature="n#profile#5;n#profiles#0;n#project#0;n#!!top" />
-                <element signature="n#profile#6;n#profiles#0;n#project#0;n#!!top" />
-                <element signature="n#profile#7;n#profiles#0;n#project#0;n#!!top" />
-                <element signature="n#profile#8;n#profiles#0;n#project#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="136" column="73" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/beam/examples/MinimalWordCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="96" column="56" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+            <state relative-caret-position="236">
+              <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/transforms/MapElements.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/values/TypeDescriptors.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="958">
-              <caret line="146" column="100" selection-start-line="146" selection-start-column="93" selection-end-line="146" selection-end-column="100" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/transforms/FlatMapElements.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-652">
-              <caret line="27" column="62" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -81,6 +41,7 @@
       <find>direct-runner</find>
       <find>into</find>
       <find>TextIO</find>
+      <find>ExtractWordsFn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,7 +121,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552219462215" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552315125715" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
   <component name="RunDashboard">
@@ -175,8 +136,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.run app">
-    <configuration name="run app" type="Application" factoryName="Application">
+  <component name="RunManager" selected="Application.WordCount">
+    <configuration name="MiniWordCOunt" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.beam.examples.MinimalWordCount" />
+      <module name="word-count-beam" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCount" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.apache.beam.examples.WordCount" />
       <module name="word-count-beam" />
       <option name="PROGRAM_PARAMETERS" value="--inputFile=pom.xml --output=counts" />
@@ -210,7 +178,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.run app" />
+      <item itemvalue="Application.WordCount" />
+      <item itemvalue="Application.MiniWordCOunt" />
       <item itemvalue="Maven.word-count-beam []" />
     </list>
   </component>
@@ -236,15 +205,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32863188" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49928468" visible="true" weight="0.32863188" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49928468" weight="0.32863188" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50143063" side_tool="true" weight="0.32863188" />
       <window_info anchor="bottom" id="Messages" weight="0.32863188" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.32863188" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.32863188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -273,22 +242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
-          <folding>
-            <element signature="n#profile#1;n#profiles#0;n#project#0;n#!!top" />
-            <element signature="n#activation#0;n#profile#1;n#profiles#0;n#project#0;n#!!top" />
-            <element signature="n#profile#4;n#profiles#0;n#project#0;n#!!top" />
-            <element signature="n#profile#5;n#profiles#0;n#project#0;n#!!top" />
-            <element signature="n#profile#6;n#profiles#0;n#project#0;n#!!top" />
-            <element signature="n#profile#7;n#profiles#0;n#project#0;n#!!top" />
-            <element signature="n#profile#8;n#profiles#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/io/TextIO.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7186">
@@ -307,20 +260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/beam/examples/WordCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-604">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/transforms/Count.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -355,13 +294,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="212" column="21" lean-forward="true" selection-start-line="212" selection-start-column="21" selection-end-line="212" selection-end-column="21" />
+          <folding>
+            <element signature="n#profile#1;n#profiles#0;n#project#0;n#!!top" />
+            <element signature="n#activation#0;n#profile#1;n#profiles#0;n#project#0;n#!!top" />
+            <element signature="n#profile#4;n#profiles#0;n#project#0;n#!!top" />
+            <element signature="n#profile#5;n#profiles#0;n#project#0;n#!!top" />
+            <element signature="n#profile#6;n#profiles#0;n#project#0;n#!!top" />
+            <element signature="n#profile#7;n#profiles#0;n#project#0;n#!!top" />
+            <element signature="n#profile#8;n#profiles#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/beam/examples/MinimalWordCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="96" column="56" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+        <state relative-caret-position="236">
+          <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/transforms/DoFn.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="233" column="21" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/transforms/Combine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/transforms/Count.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#3951#4130#0" expanded="true" />
+            <element signature="e#4129#4130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/beam/beam-sdks-java-core/2.11.0/beam-sdks-java-core-2.11.0.jar!/org/apache/beam/sdk/values/PCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="164" column="45" selection-start-line="164" selection-start-column="45" selection-end-line="164" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/beam/examples/WordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="136" column="73" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="73" />
         </state>
       </provider>
     </entry>
