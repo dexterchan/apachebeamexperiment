@@ -29,7 +29,9 @@ import org.apache.beam.sdk.options.Description;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.apache.beam.sdk.testing.PAssert;
 import org.apache.beam.sdk.transforms.DoFn;
+import org.apache.beam.sdk.transforms.MapElements;
 import org.apache.beam.sdk.transforms.ParDo;
+import org.apache.beam.sdk.transforms.SimpleFunction;
 import org.apache.beam.sdk.values.KV;
 import org.apache.beam.sdk.values.PCollection;
 import org.slf4j.Logger;
@@ -131,14 +133,24 @@ public class DebuggingWordCount {
 
     void setFilterPattern(String value);
   }
+  /** A SimpleFunction that converts a Word and Count into a printable string. */
+  public static class FormatAsTextFn extends SimpleFunction<KV<String, Long>, String> {
+    @Override
+    public String apply(KV<String, Long> input) {
+      return input.getKey() + ": " + input.getValue();
+    }
+  }
 
   static void runDebuggingWordCount(WordCountOptions options) {
     Pipeline p = Pipeline.create(options);
 
-    PCollection<KV<String, Long>> filteredWords =
+    //PCollection<KV<String, Long>> filteredWords =
         p.apply("ReadLines", TextIO.read().from(options.getInputFile()))
             .apply(new WordCount.CountWords())
-            .apply(ParDo.of(new FilterTextFn(options.getFilterPattern())));
+                .apply(MapElements.via(new WordCount.FormatAsTextFn()))
+            //.apply(ParDo.of(new FilterTextFn(options.getFilterPattern())))
+           //
+            .apply("WriteCounts", TextIO.write().to(options.getOutput()));
 
     /*
      * Concept #3: PAssert is a set of convenient PTransforms in the style of
@@ -154,7 +166,7 @@ public class DebuggingWordCount {
      */
     List<KV<String, Long>> expectedResults =
         Arrays.asList(KV.of("Flourish", 3L), KV.of("stomach", 1L));
-    PAssert.that(filteredWords).containsInAnyOrder(expectedResults);
+    //PAssert.that(filteredWords).containsInAnyOrder(expectedResults);
 
     p.run().waitUntilFinish();
   }
